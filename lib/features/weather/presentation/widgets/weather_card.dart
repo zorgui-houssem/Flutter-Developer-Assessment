@@ -205,7 +205,7 @@ class _WeatherCardState extends State<WeatherCard>
         Padding(
           padding: const EdgeInsets.only(top: 10),
           child: Text(
-            'Â°C',
+            '°C',
             style: AppTextStyles.temperatureMedium(
               (isDark ? AppColors.darkAccent : AppColors.lightAccent)
                   .withValues(alpha: 0.8),
@@ -269,7 +269,7 @@ class _WeatherCardState extends State<WeatherCard>
         _buildStat(
           context,
           icon: Icons.thermostat_rounded,
-          value: '${widget.weather.feelsLike.round()}Â°C',
+          value: '${widget.weather.feelsLike.round()}°C',
           label: 'Feels Like',
           isDark: isDark,
         ),

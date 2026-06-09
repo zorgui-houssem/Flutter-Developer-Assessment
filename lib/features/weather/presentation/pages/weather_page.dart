@@ -85,7 +85,7 @@ class WeatherPage extends StatelessWidget {
               ),
               onPressed: () =>
                   context.read<ThemeBloc>().add(const ThemeToggled()),
-              tooltip: themeState.isDark ? 'Mode clair' : 'Mode sombre',
+              tooltip: themeState.isDark ? 'Light mode' : 'Dark mode',
             );
           },
         ),
@@ -294,7 +294,7 @@ class _WelcomeState extends StatelessWidget {
             ),
             const SizedBox(height: 28),
             Text(
-              'Recherchez une ville',
+              'Search for a city',
               style: AppTextStyles.cityName(
                 isDark ? AppColors.darkTextPrimary : AppColors.lightTextPrimary,
               ).copyWith(fontSize: 24),
@@ -302,7 +302,7 @@ class _WelcomeState extends StatelessWidget {
             ),
             const SizedBox(height: 12),
             Text(
-              'MÃ©tÃ©o en temps rÃ©el\npour n\'importe quelle ville',
+              'Real-time weather\nfor any city',
               style: AppTextStyles.condition(textSecondary),
               textAlign: TextAlign.center,
             ),

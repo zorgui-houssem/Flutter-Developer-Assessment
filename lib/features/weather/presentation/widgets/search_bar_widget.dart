@@ -157,7 +157,7 @@ class _SearchBarWidgetState extends State<SearchBarWidget>
                         child: Padding(
                           padding: const EdgeInsets.all(16),
                           child: Text(
-                            'Aucune ville pour "${state.query}"',
+                            'No cities found for "${state.query}"',
                             style: TextStyle(
                               color: Theme.of(context).brightness ==
                                       Brightness.dark
@@ -342,7 +342,7 @@ class _SearchBarWidgetState extends State<SearchBarWidget>
                       : AppColors.lightTextPrimary,
                 ),
                 decoration: InputDecoration(
-                  hintText: 'Rechercher une ville...',
+                  hintText: 'Search for a city...',
                   hintStyle: AppTextStyles.searchHint(
                     isDark
                         ? AppColors.darkTextSecondary

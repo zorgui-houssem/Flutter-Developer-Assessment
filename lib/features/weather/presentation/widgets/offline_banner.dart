@@ -83,7 +83,7 @@ class _OfflineBannerState extends State<OfflineBanner>
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Wifi ou Internet off',
+                      'WiFi or Internet Off',
                       style: AppTextStyles.offlineBanner(Colors.white),
                     ),
                     const SizedBox(height: 2),

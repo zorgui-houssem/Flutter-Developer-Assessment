@@ -23,7 +23,7 @@ class RecentSearchesList extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(bottom: 10),
               child: Text(
-                'Recherches rÃ©centes',
+                'Recent Searches',
                 style: AppTextStyles.statLabel(
                   isDark
                       ? AppColors.darkTextSecondary
